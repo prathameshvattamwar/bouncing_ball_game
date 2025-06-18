@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Bouncing Ball Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="ui-top">
+            <div class="score-display">
+                <span class="label">SCORE</span>
+                <span id="score-val">0</span>
+            </div>
+            <button id="play-pause-button">PAUSE</button>
+            <div class="score-display">
+                <span class="label">BEST</span>
+                <span id="high-score-val">0</span>
+            </div>
+        </div>
+        <div id="board">
+            <div id="bird">🔴</div>
+        </div>
+        <div id="message-overlay" class="active">
+            <div class="message-box">
+                <h1>Bouncing Ball</h1>
+                <p>Tap or Press Space to Start</p>
+            </div>
+        </div>
+        <div id="game-over-screen">
+             <div class="message-box">
+                <h2>GAME OVER</h2>
+                <div class="final-scores">
+                    <p>Score: <span id="final-score">0</span></p>
+                    <p>Best: <span id="final-high-score">0</span></p>
+                </div>
+                <button id="restart-button">RESTART</button>
+            </div>
+        </div>
+        <div id="achievement-popup"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
