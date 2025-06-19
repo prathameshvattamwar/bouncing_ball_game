@@ -147,8 +147,8 @@ class Bird {
     constructor(element, gameDimensions) {
         this.element = element;
         this.updateDimensions(gameDimensions);
-        this.gravity = 0.25;
-        this.lift = -5.0;
+        this.gravity = 0.20;
+        this.lift = -4.5; 
         this.reset();
     }
 
@@ -194,7 +194,8 @@ class PipeManager {
     constructor(boardElement, gameDimensions) {
         this.board = boardElement;
         this.updateDimensions(gameDimensions);
-        this.spawnInterval = 120;
+        // --- CHANGE: Increased the interval to create more space between pipes ---
+        this.spawnInterval = 180;
         this.spawnTimer = 0;
         this.pipes = [];
         this.reset();
